@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+}
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  color: #748088;
+}
+.navbar h1 {
+  color: black;
+}
+.nav-list ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  list-style-type: none;
+}
+.nav-list ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+}
+.username {
+  background-color: #e7f4ff;
+  border-radius: 12px;
+  padding: 1rem;
+  color: #2cb3fe;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+.services {
+  background-color: white;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 15%;
+  gap: 40px;
+}
+.services-content,
+.services-image {
+  flex: 1;
+}
+.services-content p {
+  color: #ccc;
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+.services-content h2 {
+  line-height: 1.4;
+}
+.services-content .text-highlight {
+  color: #2cb3fe;
+  font-weight: bold;
+}
+.services-content button {
+  color: white;
+  background-color: #2cb3fe;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  font-size: 10px;
+}
+.services-image img {
+  height: 250px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    padding: 8px;
+    gap: 1rem;
+  }
+  .navbar ul {
+    gap: 1rem;
+  }
+  .navbar ul li a {
+    font-size: 14px;
+  }
+  .username {
+    font-size: 12px;
+  }
+  .services {
+    margin-top: 1.5rem;
+    padding: 30px 10%;
+    gap: 1rem;
+  }
+  .services-content h2 {
+    font-size: 20px;
+  }
+  .services-image img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 5px;
+  }
+  .navbar ul li a {
+    font-size: 12px;
+  }
+  .username {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .services-content button {
+    padding: 10px;
+  }
+}
+
+
